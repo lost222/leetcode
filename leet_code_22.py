@@ -1,3 +1,4 @@
+# 注意递归的精妙
 class Solution(object):
     def generateParenthesis(self, N):
         ans = []
