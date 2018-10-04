@@ -30,7 +30,24 @@ public:
         ListNode* toerase = cur->next;
         cur->next = toerase->next;
         delete toerase;
-        return head;
+        return head;      
+    }
+    
+    //只用一轮遍历，节省一轮时间但是空间复杂度变成O（n）
+    ListNode* removeNthFromEnd2(ListNode* head, int n) {
+        vector<ListNode*> ListVec;
+        ListVec.push_back(head);
+        ListNode* cur = head;
+        int len = 0;
+        while(cur != NULL){len++; cur=cur->next;ListVec.push_back(cur);}
+        int toerase = len - n ;
+        //单独处理删除头情况
+        if(toerase == 0){cur = head; head=head->next;delete cur; return head;}
         
+        cur = ListVec[toerase - 1];
+        ListNode* to_e = cur->next;
+        cur->next = to_e->next;
+        delete to_e;
+        return head; 
     }
 };
