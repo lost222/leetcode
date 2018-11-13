@@ -26,6 +26,7 @@ static bool issmys(char c){
    return !isalnum(c);
 }
 bool isPalindrome(string s) {
+ // 需要 <algorithm>
     transform(s.begin(), s.end(), s.begin(), ::tolower);
  //s.erase(remove_if(s.begin(), s.end(), ::isalnum), s.end()); 因为using namespace std 的关系， 必须这么写 
  // https://stackoverflow.com/questions/8364678/g-string-remove-if-error
@@ -34,3 +35,4 @@ bool isPalindrome(string s) {
     reverse(t.begin(), t.end());
     return t == s;
 }
+//
