@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/21_merge.dir/main.cpp.o  -o 21_merge 

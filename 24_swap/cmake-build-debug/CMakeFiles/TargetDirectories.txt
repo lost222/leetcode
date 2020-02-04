@@ -1,0 +1,3 @@
+/mnt/d/lion_ide/leetcode/24_swap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/d/lion_ide/leetcode/24_swap/cmake-build-debug/CMakeFiles/24_swap.dir
+/mnt/d/lion_ide/leetcode/24_swap/cmake-build-debug/CMakeFiles/edit_cache.dir
